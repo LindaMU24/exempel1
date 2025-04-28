@@ -1,0 +1,9 @@
+name: Pull request check
+on: [pull request]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print pull request detected
+        run: echo "Pull request detected!"
