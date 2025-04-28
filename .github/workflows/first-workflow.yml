@@ -11,8 +11,8 @@ jobs:
       - name: Print push success
         run: echo "Hello from GitHub Actions!"
 
-      - name: Print current date and time
-        run: date
+      - name: Print current date and time in Sweden
+        run: TZ=Europe/Stockholm date
 
       - name: List files in the project
         run: ls -R
