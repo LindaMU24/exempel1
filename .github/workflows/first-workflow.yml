@@ -1,16 +1,12 @@
 name: My first Action
 on: [push]
+
 jobs:
   exempel:
     runs-on: ubuntu-latest
     steps:
-      -uses: actions/checkout@v4
-      -name: print push success
-      run: echo "Hello from GitHub Actions!"
+      - name: Check out code
+        uses: actions/checkout@v4
 
-      print:
-        runs-on: ubuntu-latest
-        steps:
-          -uses: actions/checkout@v4
-          -name: print files
-          run: ls -R
+      - name: Print push success
+        run: echo "Hello from GitHub Actions!"
