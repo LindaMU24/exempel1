@@ -10,3 +10,9 @@ jobs:
 
       - name: Print push success
         run: echo "Hello from GitHub Actions!"
+
+      - name: Print current date and time
+        run: date
+
+      - name: List files in the project
+        run: ls -R
